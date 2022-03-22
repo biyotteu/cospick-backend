@@ -2,9 +2,9 @@ import fs from 'fs';
 import axios from 'axios';
 
 export const getMap = async (ctx, next) => {
-  console.log(__dirname + '\\index.html');
+  console.log(__dirname + '/index.html');
   const rawContent = fs
-    .readFileSync(__dirname + '\\index.html')
+    .readFileSync(__dirname + '/index.html')
     .toString('utf-8');
   ctx.body = rawContent;
 };
